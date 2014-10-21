@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>HelloCordova</name>
+	<description>
+		A sample Apache Cordova application that responds to the deviceready event.
+	</description>
+	<author email="dev@cordova.apache.org" href="http://cordova.io">
+		Apache Cordova Team
+	</author>
+	<content src="index.html" />
+	<access origin="*" />
+
+	<platform name="android">
+		<!-- Para a splash screen aparecer corretamente no Android -->
+		<preference name="SplashScreen" value="screen" />
+		<!--
+			O ideal é usar um plugin para oculpar a splash
+			screen quando seu app estiver pronto
+		-->
+		<preference name="SplashScreenDelay" value="1000" />
+		<splash density="land-hdpi" src="res/screen/android/drawable-land-hdpi.png" />
+		<splash density="land-ldpi" src="res/screen/android/drawable-land-ldpi.png" />
+		<splash density="land-mdpi" src="res/screen/android/drawable-land-mdpi.png" />
+		<splash density="land-xhdpi" src="res/screen/android/drawable-land-xhdpi.png" />
+		<splash density="port-hdpi" src="res/screen/android/drawable-port-hdpi.png" />
+		<splash density="port-ldpi" src="res/screen/android/drawable-port-ldpi.png" />
+		<splash density="port-mdpi" src="res/screen/android/drawable-port-mdpi.png" />
+		<splash density="port-xhdpi" src="res/screen/android/drawable-port-xhdpi.png" />
+		<icon density="ldpi" src="res/icon/android/drawable-ldpi.png" />
+		<icon density="mdpi" src="res/icon/android/drawable-mdpi.png" />
+		<icon density="hdpi" src="res/icon/android/drawable-hdpi.png" />
+		<icon density="xhdpi" src="res/icon/android/drawable-xhdpi.png" />
+	</platform>
+	<platform name="ios">
+		<splash height="480" src="res/screen/ios/Default~iphone.png" width="320" />
+		<splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" />
+		<splash height="1024" src="res/screen/ios/Default-Portrait~ipad.png" width="768" />
+		<splash height="2048" src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" />
+		<splash height="768" src="res/screen/ios/Default-Landscape~ipad.png" width="1024" />
+		<splash height="1536" src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" />
+		<splash height="1136" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" />
+		<icon height="60" src="res/icon/ios/icon-60.png" width="60" />
+		<icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+		<icon height="76" src="res/icon/ios/icon-76.png" width="76" />
+		<icon height="152" src="res/icon/ios/icon-76@2x.png" width="152" />
+		<icon height="40" src="res/icon/ios/icon-40.png" width="40" />
+		<icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
+		<icon height="57" src="res/icon/ios/icon.png" width="57" />
+		<icon height="114" src="res/icon/ios/icon@2x.png" width="114" />
+		<icon height="72" src="res/icon/ios/icon-72.png" width="72" />
+		<icon height="144" src="res/icon/ios/icon-72@2x.png" width="144" />
+		<icon height="29" src="res/icon/ios/icon-small.png" width="29" />
+		<icon height="58" src="res/icon/ios/icon-small@2x.png" width="58" />
+		<icon height="50" src="res/icon/ios/icon-50.png" width="50" />
+		<icon height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
+	</platform>
+</widget>
