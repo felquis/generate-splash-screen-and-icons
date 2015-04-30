@@ -1,10 +1,10 @@
-## Gerar splash screen e icons automaticamente para Android e iOS
+## Gerar splash screen e icons automaticamente para Android, iOS e Windows Phone 8
 
-[Leia o post completo](http://nativebuild.com/2014/gerar-icones-splash-screen-cordova-phonegap.html) falando sobre como gerar Splash Screen e Icons para Android e iOS
+[Leia o post completo](http://nativebuild.com/2014/gerar-icones-splash-screen-cordova-phonegap.html) falando sobre como gerar Splash Screen e Icons para Android, iOS e Windows Phone 8
 
 ### Summary
 
-This is a Phonegap/Cordova how to generate splash screens and icons for Android and iOS tutorial, it may not works with Phonegap Build and is only tested in Linux and OSX
+This is a Phonegap/Cordova how to generate splash screens and icons for Android, iOS and Windows Phone 8 tutorial, it may not works with Phonegap Build and is only tested in Linux and OSX
 
 1 - Install [Image Magick](http://www.imagemagick.org/)
 
@@ -12,7 +12,12 @@ This is a Phonegap/Cordova how to generate splash screens and icons for Android 
 
 (You can also clone this repo `git clone git@github.com:felquis/generate-splash-screen-and-icons.git`)
 
-3 - Open your terminal, navigate to the root of your project, and run `sh gsi.sh`, the `res/` directory will be created with all icons and splash screens necessary for Android and iOS
+3 - Open your terminal, navigate to the root of your project, and run 
+````
+sh gsi.sh
+```
+
+The `res/` directory will be created with all icons and splash screens necessary for Android, iOS and Windows Phone 8
 
 
 4 - Update your `config.xml` with the splash screens and icons files
@@ -57,7 +62,11 @@ This is a Phonegap/Cordova how to generate splash screens and icons for Android 
   <icon height="50" src="res/icon/ios/icon-50.png" width="50" />
   <icon height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
 </platform>
-
+<platform name="wp8">
+  <!-- images are determined by width and height. The following are supported -->
+  <splash height="1280" src="res/screen/wp8/SplashScreenImage.png" width="768" />
+  <icon height="99" src="res/icon/wp8/ApplicationIcon.png" width="99" />
+</platform>
 <icon src="res/icon/icon.png" />
 ```
 
